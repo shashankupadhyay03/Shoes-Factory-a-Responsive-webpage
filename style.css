@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+}
+
+
+.left-div{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+
+.right-div{
+    width: 60%;
+    height: 100%;
+    background-color: pink;
+    display: flex;
+    background-image: url(https://images.unsplash.com/photo-1570051779696-244e9f680cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzM5fHxzaG9lc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.upper-div{
+    width: 60%;
+    height: 50%;
+    background-color: green;
+    background-image: url(https://images.unsplash.com/photo-1534565337397-2a97f4e093b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjEwfHxzaG9lc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+}
+.lower-div{
+    width: 60%;
+    height: 50%;
+    background-color: black;
+    background-image: url(https://images.unsplash.com/photo-1562183241-b937e95585b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNob2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.nav-bar i{
+    width: 100%;
+    margin-left: 20px;
+    color: royalblue;
+}
+.nav-bar a{
+    margin-left: 20px;
+}
+
+h1{
+    font-size: 60px;
+    margin-top: 30%;
+    margin-left: 20%;
+}
+
+p{
+    margin-left: 20%;
+    font-weight: bold;
+    opacity: .6;
+}
+
+.p2{
+    margin-top: 5%;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-weight: 600px;
+}
+ 
+@media(max-width: 500px){
+    .main{
+        flex-direction: column;
+        display: block inline-block;
+    }
+    .main .left-div{
+        width: 100%;
+        
+
+    }
+    .main .right-div{
+        width: 100%;
+
+    }
+}
